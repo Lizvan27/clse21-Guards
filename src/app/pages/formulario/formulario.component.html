@@ -1,0 +1,36 @@
+<section  class="container">
+    <div class="col-6">
+        <h2>Mandanos tu datos</h2>
+        <form [formGroup]="formDatos" (submit)="enviar()">
+            <div class="mb-3">
+                <label for="">Nombres</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">Apellido</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">Numero de Contacto</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <select name="" id="" class="form-select">
+                    <option value="1">Femenino</option>
+                    <option value="2">Masculino</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <select name="" id="" class="form-select">
+                    <option value="">Seleccione su Cuidad</option>
+                    <option value="">Lima</option>
+                    <option value="">Arequipa</option>
+                    <option value="">Ica</option>
+                    <option value="">Puno</option>
+                    <option value="">Madre de dios</option>
+                    <option value="">Otra cuidad</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</section>

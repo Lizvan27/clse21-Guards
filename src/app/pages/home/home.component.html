@@ -1,0 +1,24 @@
+<div>
+    <div>
+        <h1>Hola!!</h1>
+        <div>
+            <h4>¿Qu&eacute; es un Guard?</h4>
+            <p>Los Guards en Angular, son de alguna manera: middlewares que se ejecutan antes de cargar una ruta y determinan si se puede cargar dicha ruta o no. Existen 4 tipos diferentes de Guards (o combinaciones de estos) que son los siguientes:</p>
+            <div>
+                <ol>
+                    <li>(CanActivate) Antes de cargar los componentes de la ruta.</li>
+                    <li>(CanLoad) Antes de cargar los recursos (assets) de la ruta.</li>
+                    <li>(CanDeactivate) Antes de intentar salir de la ruta actual (usualmente utilizado para evitar salir de una ruta, si no se han guardado los datos).</li>
+                    <li>(CanActivateChild) Antes de cargar las rutas hijas de la ruta actual.</li>
+                </ol>
+            </div>
+            <div>
+                <h5>¿Por qué utilizar Guards?</h5>
+                <div>
+                    Una de las ventajas de utilizarlos, es que al no cargar la ruta evitamos que los usuarios vean una interfaz a la que no tienen acceso (aunque sea por unos pocos milisegundos). Por otra parte, con estos componentes 
+                    es posible estructurar el código de la aplicación de una manera más organizada y donde la lógica de la ruta está en la ruta en sí y la lógica de permisos y acceso a recursos se encuentra aislada en estos componentes.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
