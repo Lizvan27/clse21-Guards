@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { MaterialComponent } from '../material/material.component';
 
 
 
@@ -12,7 +13,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [
     CommonModule,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    MaterialComponent
   ],
   exports:[
     HeaderComponent

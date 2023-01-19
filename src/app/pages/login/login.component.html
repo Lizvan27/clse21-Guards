@@ -1,16 +1,22 @@
-<div>
-    <div>
+<mat-card>
+    <mat-card-content>
         <h2>Login</h2>
-    </div>
-    <form [formGroup]="login" (submit)="mostrar()">
-        <div>
-            <label for="name">Usuario</label>
-            <input type="text" id="name" name="name" formControlName="name" #name>
-        </div>
-        <div>
-            <label for="pass">Contraseña</label>
-            <input type="password" id="pass" name="pass" formControlName="pass" #pass>
-        </div>
-        <button [disabled]="login.invalid" type="submit">Ingresar</button>
-    </form>
-</div>
+        <form [formGroup]="login" (submit)="mostrar()">
+            <div fxFlex="100%" class="mt-5">
+                <mat-form-field>
+                    <mat-label for="name">Usuario</mat-label>
+                    <input matInput type="text" id="name" name="name" formControlName="name" #name mat-form-field>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100%" class="mt-5">
+                <mat-form-field>
+                    <mat-label for="pass">Contraseña</mat-label>
+                    <input matInput type="password" id="pass" name="pass" formControlName="pass" #pass>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100%">
+                <button mat-raised-button [disabled]="login.invalid" type="submit">Ingresar</button>
+            </div>
+        </form>
+    </mat-card-content>    
+</mat-card>
